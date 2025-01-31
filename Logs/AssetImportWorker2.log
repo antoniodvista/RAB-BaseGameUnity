@@ -254,3 +254,7 @@ Received Import Request.
 Start importing Assets/TerrainData_443c00b8-a1ba-47e2-9fe9-c499db8d638b.asset using Guid(1d1e234bfae73c04f8ec917733caa994) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fabf4667f46077d0560b375201b30364') in 0.0272654 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

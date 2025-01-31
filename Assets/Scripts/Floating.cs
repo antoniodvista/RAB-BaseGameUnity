@@ -3,7 +3,7 @@ using UnityEngine;
 public class Floating : MonoBehaviour
 {
     [Header("Time")]
-    [SerializeField] float timer;
+    [SerializeField] float timer = 0;
     [SerializeField] float sendTime;
     [SerializeField] float cooldown;
     float returnTime;
@@ -26,10 +26,13 @@ public class Floating : MonoBehaviour
         returnTime = sendTime + cooldown;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         timer = Time.time;
+    }
 
+    private void FixedUpdate()
+    {
         //  platform moves up
         if (Time.time > sendTime)
         {
@@ -44,7 +47,7 @@ public class Floating : MonoBehaviour
 
         if (isRotating)
         {
-            gameObject.transform.Rotate(new Vector3(0, rotationSpeed, 0) * Time.time);
+            gameObject.transform.Rotate(new Vector3(0, rotationSpeed, 0) * Time.deltaTime);
         }
     }
 
